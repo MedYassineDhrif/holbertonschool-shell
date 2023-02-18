@@ -1,3 +1,2 @@
 #!/bin/bash
 find . -type f -empty -printf "$(basename %p)\n" -o -type d -empty -printf "$(basename %p)/\n"
-
