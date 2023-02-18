@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname '*.gif' -printf '%f\n' | tr '[:upper:]' '[:lower:]' | sort | cut -f1 -d'.' | uniq
+find . \( -type f \( -iname '*.gif' \) -o -name '.*' \) -printf '%f\n' | tr '[:upper:]' '[:lower:]' | sort | cut -f1 -d'.' | uniq
